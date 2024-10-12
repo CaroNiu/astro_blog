@@ -5,7 +5,7 @@ import {
 } from 'astro-boilerplate-components';
 
 const CTA = () => (
-  <Section>
+  /*<Section>
     <Newsletter
       title={
         <>
@@ -15,7 +15,7 @@ const CTA = () => (
       description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero
           esse non molestias eos excepturi, inventore atque cupiditate."
     />
-  </Section>
+  </Section>*/
 );
 
 export { CTA };
