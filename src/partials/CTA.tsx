@@ -1,8 +1,4 @@
-import {
-  GradientText,
-  Newsletter,
-  Section,
-} from 'astro-boilerplate-components';
+import { Section } from 'astro-boilerplate-components';
 import { useEffect } from 'react';
 
 const CTA = () => {
@@ -19,8 +15,10 @@ const CTA = () => {
     const handleScroll = () => {
       // 根据滚动位置显示/隐藏按钮
       if (window.scrollY > 300) {
+        // @ts-ignore
         button.style.display = 'block';
       } else {
+        // @ts-ignore
         button.style.display = 'none';
       }
     };
@@ -32,35 +30,26 @@ const CTA = () => {
   }, []);
 
   return (
-      <Section>
-        <Newsletter
-            title={
-              <>
-                <GradientText>Newsletters</GradientText>
-              </>
-            }
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero
-            esse non molestias eos excepturi, inventore atque cupiditate."
-        />
-        <button
-            id="scroll-to-top-button"
-            onClick={scrollToTop}
-            style={{
-              display: 'none',
-              position: 'fixed',
-              bottom: '20px',
-              right: '20px',
-              backgroundColor: '#555',
-              color: '#fff',
-              padding: '10px 15px',
-              border: 'none',
-              borderRadius: '5px',
-              cursor: 'pointer',
-            }}
-        >
-          回到顶部
-        </button>
-      </Section>
+    <Section>
+      <button
+        id="scroll-to-top-button"
+        onClick={scrollToTop}
+        style={{
+          display: 'none',
+          position: 'fixed',
+          bottom: '20px',
+          right: '20px',
+          backgroundColor: '#555',
+          color: '#fff',
+          padding: '10px 15px',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer',
+        }}
+      >
+        回到顶部
+      </button>
+    </Section>
   );
 };
 
