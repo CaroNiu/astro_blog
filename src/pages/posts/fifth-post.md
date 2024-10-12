@@ -1,3 +1,12 @@
+---
+layout: '@/templates/BasePost.astro'
+title: JVM整理
+description: JVM整理
+pubDate: 2024-10-12T00:00:00Z
+imgSrc: '/assets/images/image-post7.jpeg'
+imgAlt: 'Image post 7'
+---
+
 JVM整理
 
 java文件执行流程
